@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, innitial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4c20df92a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">Portfo<span>lio.</span></h1>
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Weclome!</p>
+            <h1>Hi, I am <br><span>Marc Aga R. Baluran</span></h1>
+        </div>
+    </div>
+</div>
+<!-------about nako-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/ty.jpg">
+            </div>
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Marc Aga R. Baluran 19 years old and I live in Patag CDO. In my free time, I play video games and basketball 
+                    with my friends. Also, I have two older brothers.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link">Experience</p>
+                    <p class="tab-links"></p>
+                </div>
+                <div class="tab-contents active-tab">
+                    <ul>
+                        <li>Has no experience yet<br>Still learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------education nako-->
+<div id="education">
+    <div class="container">
+        <h1 class="sub=title">My Education</h1>
+        <div class="education-list">
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>Elementary(2009-2015)</h2>
+                <p>City Central School</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-bookmark"></i>
+                <h2>Junior High School(2015-2019)</h2>
+                <p>Misamis Oriental General Comprehensive High School</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Senior High(2019-2021)</h2>
+                <p>Liceo de Cagayan University</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------contact nako-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bmarcaga@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09067979337</p>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/MarcBaluran/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/marcbaluran/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://t.snapchat.com/yLtu8IJk"><i class="fa-brands fa-snapchat"></i></a>
+            </div>
+            </div> 
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" equired>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
